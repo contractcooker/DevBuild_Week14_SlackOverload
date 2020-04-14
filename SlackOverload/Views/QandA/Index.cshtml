@@ -1,0 +1,33 @@
+﻿
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Index";
+    List<Question> Questions = (List<Question>)ViewData["Questions"];
+}
+
+<h1>Recent Questions</h1>
+@foreach (Question q in Questions)
+{
+    <h3><a href="/QandA/Detail/@q.Id">@q.Title</a></h3>
+
+    string username = Context.Session.GetString("Username");
+
+    @if (q.Detail.Length > 100 && q.Username.Equals(username))
+    {
+        <div>@q.Detail.Substring(0, 100) ...</div><a href="/QandA/EditQuestion/@q.Id">Edit</a>
+    }
+    else if (q.Username.Equals(username))
+    {
+        <div>@q.Detail</div><a href="/QandA/EditQuestion/@q.Id">Edit</a>
+    }
+    @q.Username
+}
+<form asp-controller="QAndA" asp-action="Search" method="post">
+
+    <input type="submit" value="Search" class="btn btn-primary" />
+    <input type="search" id="Search" name="Search" />
+
+</form>
+
+

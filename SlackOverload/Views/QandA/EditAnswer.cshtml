@@ -1,0 +1,18 @@
+﻿@model Answer
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Answer</h1>
+<form asp-controller="QAndA" asp-action="EditAnswer" method="post">
+    @*@Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.Username)
+    @Html.HiddenFor(m => m.QuestionId)
+    @Html.HiddenFor(m => m.Posted)
+    @Html.HiddenFor(m => m.Upvotes)*@
+    @Html.LabelFor(m => m.Detail)
+    @Html.EditorFor(m => m.Detail)
+    <br />
+    <input type="submit" value="Save Changes" class="btn btn-primary" />
+</form>
+

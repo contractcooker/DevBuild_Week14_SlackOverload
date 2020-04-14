@@ -1,0 +1,12 @@
+﻿@model Question
+@{
+    ViewData["Title"] = "EditQuestion";
+}
+
+<h1>EditQuestion</h1>
+<form asp-controller="QAndA" asp-action="EditQuestion" method="post">
+    @Html.LabelFor(m => m.Detail)
+    @Html.EditorFor(m => m.Detail)
+    <br />
+    <input type="submit" value="Save Changes" class="btn btn-primary" />
+</form>
