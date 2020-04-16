@@ -121,3 +121,5 @@ C:\Users\tbarron\OneDrive - KNEX\Documents\GitHub\SlackOverload\SlackOverload\ob
 C:\Users\tbarron\OneDrive - KNEX\Documents\GitHub\SlackOverload\SlackOverload\obj\Debug\netcoreapp3.1\SlackOverload.Views.pdb
 C:\Users\tbarron\OneDrive - KNEX\Documents\GitHub\SlackOverload\SlackOverload\obj\Debug\netcoreapp3.1\SlackOverload.csproj.CopyComplete
 C:\Users\tbarron\OneDrive - Knex\Documents\GitHub\SlackOverload\SlackOverload\obj\Debug\netcoreapp3.1\Razor\Views\QandA\Search.cshtml.g.cs
+C:\Users\tbarron\OneDrive - KNEX\Documents\GitHub\SlackOverload\SlackOverload\obj\Debug\netcoreapp3.1\SlackOverload.csproj.CoreCompileInputs.cache
+C:\Users\tbarron\OneDrive - KNEX\Documents\GitHub\SlackOverload\SlackOverload\obj\Debug\netcoreapp3.1\SlackOverload.genruntimeconfig.cache
